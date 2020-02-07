@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-height: 150vh;
+    background: url("/src/assets/Alternating-Arrowhead.svg");
+    font-family: Helvetica Neue, Helvetica, Arial;
+}
+
+header {
+    background-color: rgba(128, 128, 128, 0.199);
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+    border-radius: 1rem;
+}
+
+@media only screen and (min-width: 300px) {
+    .main {
+        text-align: center;
+        padding-top: 90px;
+    }
+    #search {
+        font-size: 18px;
+    }
+    #search label {
+        font-weight: bold;
+    }
+    #search input {
+        font-size: inherit;
+        font-family: inherit;
+        outline: none;
+    }
+    #search button {
+        margin-top: 25px;
+        font-family: inherit;
+        font-size: inherit;
+        background-color: dodgerblue;
+        border: 1px solid dodgerblue;
+        border-radius: 3px;
+        cursor: pointer;
+        color: white;
+    }
+    #search button:hover {
+        background-color: darkblue;
+    }
+    #weather {
+        padding: 30px;
+        border: 1px solid #ccc;
+        width: 300px;
+        margin: 50px auto auto;
+        background-color: rgba(0, 191, 255, 0.705);
+        box-shadow: 2px 2px 3px #ccc;
+        color: white;
+        box-sizing: border-box;
+        display: none;
+        font-weight: bold;
+    }
+    #weather h1 {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    #weatherCity {
+        font-weight: 20px;
+    }
+    #weatherDescription {
+        float: left;
+        font-size: 10px;
+    }
+    #weatherTemperature {
+        float: right;
+        font-size: 10px;
+    }
+    #load {
+        padding: 30px;
+        width: 500px;
+        text-align: center;
+        margin: 100px auto auto;
+        display: none;
+    }
+}
+
+@media only screen and (min-width:700px) {
+    .main {
+        text-align: center;
+        padding-top: 90px;
+    }
+    #search {
+        font-size: 26px;
+    }
+    #search label {
+        font-weight: bold;
+    }
+    #search input {
+        font-size: inherit;
+        font-family: inherit;
+        outline: none;
+    }
+    #search button {
+        margin-top: 25px;
+        font-family: inherit;
+        font-size: inherit;
+        background-color: dodgerblue;
+        border: 1px solid dodgerblue;
+        border-radius: 3px;
+        cursor: pointer;
+        color: white;
+    }
+    #search button:hover {
+        background-color: darkblue;
+    }
+    #weather {
+        padding: 40px;
+        border: 1px solid #ccc;
+        width: 600px;
+        margin: 100px auto auto;
+        background-color: rgba(0, 191, 255, 0.705);
+        box-shadow: 2px 2px 3px #ccc;
+        color: white;
+        box-sizing: border-box;
+        display: none;
+        font-weight: bold;
+    }
+    #weather h1 {
+        font-size: 32px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    #weatherDescription {
+        float: left;
+        font-size: 20px;
+    }
+    #weatherTemperature {
+        float: right;
+        font-size: 20px;
+    }
+    #load {
+        padding: 30px;
+        width: 500px;
+        text-align: center;
+        margin: 100px auto auto;
+        display: none;
+    }
+}
+
+@media only screen and (min-height:182px), screen and (min-width:300px) {
+    #auther {
+        margin-top: 68%
+    }
+}
+
+@media screen and (min-height:1500px), screen and (min-width:1030px) {
+    #auther {
+        margin-top: 10%
+    }
+}
+
+#auther a {
+    text-decoration: none;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
